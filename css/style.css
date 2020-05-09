@@ -79,8 +79,32 @@ header {
     height: 48rem;
 }
 
+h2.section-title {
+    font-weight: 600;
+}
+
 .col-r {
     font-family: 'Montserrat', sans-serif;
+}
+.col-r .card {
+    background: #4D4AD0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #BE2EBF, #4D4AD0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #BE2EBF, #4D4AD0);
+}
+
+.about-title {
+    font-weight: 500;
+}
+
+.about-subtitle {
+    color: #FDC830;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 5rem;
 }
 
 .about-text {
@@ -95,10 +119,6 @@ header {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-}
-
-.section-2-wrapper {
-    height: auto;
 }
 
 .card-title {
@@ -131,31 +151,6 @@ header {
     .header-main-subtitle {
         font-size: 1rem;
     }
-}
-
-@media (min-width: 768px) {
-    .navbar-nav ul li a {
-        transition: all 2s;
-      }
-      
-      .navbar-nav ul li a:after {
-        text-align: left;
-        content: '.';
-        margin: 0;
-        opacity: 0;
-      }
-      .navbar-nav ul li a:hover {
-        color: #fff;
-        z-index: 1;
-      }
-      .navbar-nav ul li a:hover:after {
-        z-index: -10;
-        animation: fill 1s forwards;
-        -webkit-animation: fill 1s forwards;
-        -moz-animation: fill 1s forwards;
-        opacity: 1;
-      }
-
 }
 
 @media (max-width: 767px) {
@@ -194,9 +189,8 @@ header {
     }
 }
 
-@media (min-height: 800px) {
-    #section-1,
-    #section-2 {
-        height: 100vh;
+@media (max-height: 800px) {
+    .card {
+        height: auto;
     }
 }
