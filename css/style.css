@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Quicksand:400,500,600|Jost:300,400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item a {
+    float: right;
+}
+
+/*********Header & Nav**********/
+
+header {
+    height: 100vh;
+    background: url('../img/sec-2.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header-logo {
+    color: #4457dc;
+    border: 2px solid #f1f1f1;
+    padding: .25rem;
+    transition: .2s ease-in;
+    background: #f1f1f1
+}
+
+.header-logo:hover {
+    color: #f1f1f1;
+    background: transparent;
+}
+
+.header-nav-main { 
+    height: 90vh;
+    margin-top: auto;
+}
+
+.header-main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7.25rem;
+    color: transparent;
+    -webkit-text-stroke: 2px #fafafa;
+}
+
+.header-main-subtitle {
+    font-size: 1.55rem;
+}
+
+/************Section-1***********/
+
+#section-1 {
+    height: 50rem;
+    position: relative;
+}
+
+.section-1-wrapper {
+    height: 48rem;
+}
+
+.col-r {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-text {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/**************Section-2***********/
+
+#section-2 {
+    padding: 5rem 0;
+    background: #4457dc url('../img/bg.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.section-2-wrapper {
+    height: auto;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.card-text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.card-footer .badge {
+    font-size: 1.25rem;
+}
+
+/************Responsive************/
+@media (max-width: 700px) {
+    .header-main-title {
+        font-size: 5.25rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-main-title {
+        font-size: 3.75rem;
+    }
+    
+    .header-main-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav ul li a {
+        transition: all 2s;
+      }
+      
+      .navbar-nav ul li a:after {
+        text-align: left;
+        content: '.';
+        margin: 0;
+        opacity: 0;
+      }
+      .navbar-nav ul li a:hover {
+        color: #fff;
+        z-index: 1;
+      }
+      .navbar-nav ul li a:hover:after {
+        z-index: -10;
+        animation: fill 1s forwards;
+        -webkit-animation: fill 1s forwards;
+        -moz-animation: fill 1s forwards;
+        opacity: 1;
+      }
+
+}
+
+@media (max-width: 767px) {
+
+    .about-title,
+    .about-subtitle {
+        font-size: 1.55rem;
+    }
+
+    .about-text {
+        font-size: 0.75rem;
+    }
+
+    .card {
+        width: 75%;
+    }
+}
+
+@media (min-width: 900px) {
+    .down-arrow i {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .header-main-title {
+        font-size: 9.75rem;
+    }
+
+    .header-main-subtitle {
+        font-size: 3.55rem;
+    }
+
+    .header-logo {
+        font-size: 5.25rem;
+    }
+}
+
+@media (min-height: 800px) {
+    #section-1,
+    #section-2 {
+        height: 100vh;
+    }
+}
