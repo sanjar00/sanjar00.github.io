@@ -11,6 +11,11 @@
     
 </head>
 <body>
+
+    <div class="holder">
+        <div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+
     <header class="header text-light">
         <div class="container">
             <div class="header-nav-main d-flex flex-column aling-items-center justify-content-between">
@@ -119,6 +124,11 @@
     </main>
 
     <script type="text/javascript" src="assets/mdb/js/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.holder').fadeToggle();
+        }, 2000);
+    </script>
     <script type="text/javascript" src="assets/mdb/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/mdb/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/mdb/js/mdb.min.js"></script>
