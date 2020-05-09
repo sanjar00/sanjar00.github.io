@@ -192,5 +192,12 @@ h2.section-title {
 @media (max-height: 800px) {
     .card {
         height: auto;
+}
+
+@media (min-height: 800px) {
+    #section-1,
+    .section-2-wrapper {
+        height: 100vh;
     }
 }
+
