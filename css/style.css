@@ -377,6 +377,7 @@ main, header, .header-main, #section-1, .section-1-wrapper, .col-md-6, .section-
 
 header {
     height: 100vh;
+    width: 100%;
     background: url('../img/sec-2.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -407,12 +408,12 @@ header i {
 /************Section-1***********/
 
 #section-1 {
-    height: 50rem;
+    padding: 5rem 0;
     position: relative;
 }
 
-.section-1-wrapper {
-    height: 48rem;
+.col-md-6 img {
+  height: auto;
 }
 
 h2.section-title {
