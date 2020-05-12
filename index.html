@@ -1,231 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no, maximum-scale=1">
-    <title>SnjBoy - Web Developer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="assets/mdb/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/mdb/css/mdb.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
-    
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no, maximum-scale=1">
+<title>SnjBoy - Web Developer</title>
+<link rel=stylesheet href=css/style.css>
+<link rel=stylesheet href=assets/mdb/css/bootstrap.min.css>
+<link rel=stylesheet href=assets/mdb/css/mdb.min.css>
+<link rel=stylesheet href=fontawesome/css/all.css>
 </head>
 <body>
-
-    <div class="holder">
-        <div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-      </div>
-
-      <nav class="navbar navbar-expand-md fixed-top">
-        <div class="container">
-            <a class="navbar-logo" href="#header">SnjBoy</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#playgroundsNavbar" aria-controls="playgroundsNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars text-white"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="playgroundsNavbar">
-                <div class="navbar-nav ml-auto">
-                    <ul class="navbar-nav text-white" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#header">Главное</a>
-                        </li>                        
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#section-1">Обо мне</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#section-2">Услуги</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#section-3">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <header id="header" class="flex-column align-items-center justify-content-center">
-        <div class="container">
-            <div class="header-main flex-column text-center">
-                <h1 class="header-main-title">Привет!</h1>
-                <div class="header-main-subtitle text-white">Давай знакомиться</div>
-            </div>
-        </div>
-        <a href="#section-1" class="down-arrow text-white text-center d-none d-md-block text-decoration-none"><i class="fas fa-chevron-down"></i></a>
-    </header>
-
-    <main id="section-1" class="align-items-center no-gutters">
-        <div class="container">
-            <div class="section-1-wrapper flex-column align-items-center justify-content-center">
-                <h2 class="section-title mb-5">Обо мне</h2>
-                <div class="row section-1-inner align-items-center">
-                    <div class="col-md-6 p-0 justify-content-center col-l">
-                        <img src="img/about-us.png" class="img-fluid" alt="About me">
-                    </div>
-                    <div class="col-md-6 px-0 flex-column justify-content-center col-r">
-                        <div class="card mx-auto">
-                            <div class="card-body text-white">
-                        <h3 class="about-title"><strong>Я Азизов Санжар</strong></h3>
-                        <h3 class="about-subtitle mb-3">Верстальщик</h3>
-                        <div class="divider"></div>
-                        <p class="about-text text-justify mt-3">Смог успешно реализовать своё хобби школьного времени в прибыльную и эффективную профессию. Я разрабатываю сайты высшей пробы и однозначно выдающегося качества, благодаря которым, все клиенты остаются довольны! В процессе разработки, я всегда придерживаюсь своей совести, что немаловажно, и всегда выкладываюсь по полной и до конца дабы угодить потребностям клиента.</p>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-                <a href="#section-2" class="down-arrow text-primary text-center d-none d-md-flex justify-content-center text-decoration-none mt-5"><i class="fas fa-chevron-down"></i></a>
-            </div>
-        </div>
-    </main>
-
-    <main id="section-2" class="align-items-center">
-        <div class="container">
-        <div class="section-2-wrapper align-items-center
-        flex-column">    
-                <h2 class="section-title text-center text-white mb-5">Услуги</h2>
-            <div class="row justify-content-around align-items-center">
-                <div class="col-md-5 card-left">
-                    <div class="card mx-auto card-cascade wider">
-                        <div class="view view-cascade overlay">
-                            <img src="img/card-1.jpg" alt="Card image cap" class="card-img-top">
-                            <a href="#section-3">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                        <div class="card-body card-body-cascade">
-                            <h4 class="card-title blue-text pb-2">Лэндинг</h4>
-                            <p class="card-text">Веб-страница, основной задачей которой является сбор контактных данных целевой аудитории. Используется для усиления эффективности рекламы, увеличения аудитории. Целевая страница обычно содержит информацию о товаре или услуге.</p>
-                    </div>
-                    <div class="card-footer text-white bg-success text-center">
-                        <h5 data-toggle="tooltip" data-placement="bottom" title="Взависимости от курса ЦБ РУз">100$</h5>
-                    </div>
-                </div>
-                </div>
-                <div class="col-md-5 card-right mt-4 m-md-0">
-                    <div class="card mx-auto card-cascade">
-                        <div class="view view-cascade overlay">
-                            <img src="img/card-2.jpg" alt="Card image cap" class="card-img-top">
-                            <a href="#section-3">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                        <div class="card-body card-body-cascade">
-                            <h4 class="card-title blue-text pb-2">Сайт-визитка</h4>
-                            <p class="card-text">Небольшой сайт, как правило, состоящий из одной (или нескольких) веб-страниц и содержащий основную информацию об организации, частном лице, компании, товарах или услугах, прейскуранты, контактные данные.</p>
-                    </div>
-                    <div class="card-footer bg-warning text-white text-center">
-                        <h5 data-toggle="tooltip" data-placement="bottom" title="Взависимости от курса ЦБ РУз">200$</h5>
-                    </div>
-                </div>
-                </div>
-            </div>
-                <a href="#section-3" class="down-arrow text-white text-center d-none d-md-flex justify-content-center text-decoration-none mt-5"><i class="fas fa-chevron-down"></i></a>
-            </div>
-        </div>
-    </main>
-
-    <main id="section-3">
-        <div class="container">
-            <div class="section-3-wrapper flex-column align-items-center text-center">
-                <h2 class="section-title mb-5">Контакты</h2>
-                <div class="middle row justify-content-center no-gutters">
-                    <div class="box col-md-3" title="Facebook">
-                        <a class="block" href="https://facebook.com/sanjar.azizov.73" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                    <div class="box col-md-3" title="Instagram">
-                        <a class="block" href="https://www.instagram.com/snj__snj/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="box col-md-3" title="Telegram">
-                        <a class="block" href="https://t.me/snj_az" target="_blank">
-                        <i class="fab fa-telegram-plane"></i>
-                        </a>
-                    </div>
-                    <div class="box col-12 mt-5">
-                        <div id="accordion">
-                            <div class="card bg-primary no-gutters mx-auto">
-                                <div class="card-header" role="tab" id="headingOne">
-                                    <h5 class="mb-0">
-                                        <a data-toggle="collapse" class="phone-href" href=".collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <i class="fas fa-phone text-white"></i>
-                                        </a>
-                                    </h5>
-                                </div>                
-                                <div class="collapse collapseOne" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <strong class="text-white">+998-93-516-18-81
-                                        </strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="page-footer font-small blue">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://sanjar00.github.io"> Sanjar Azizov</a>
-        </div>
-        <!-- Copyright -->
-      
-      </footer>
-      <!-- Footer -->
-
-      <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"></script>
-    <script>
-        setTimeout(function(){
-            $('.holder').fadeToggle();
-        }, 3000);
-    </script>
-    <script>
-        $('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
-    </script>
-    <script src="assets/mdb/js/bootstrap.min.js"></script>
-    <script src="assets/mdb/js/popper.js"></script>
-    <script src="assets/mdb/js/mdb.min.js"></script>
+<div class=holder>
+<div class=preloader><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+<nav class="navbar navbar-expand-md fixed-top">
+<div class=container>
+<a class=navbar-logo href=#header>SnjBoy</a>
+<button class=navbar-toggler type=button data-toggle=collapse data-target=#playgroundsNavbar aria-controls=playgroundsNavbar aria-expanded=false aria-label="Toggle navigation">
+<i class="fas fa-bars text-white"></i>
+</button>
+<div class="collapse navbar-collapse" id=playgroundsNavbar>
+<div class="navbar-nav ml-auto">
+<ul class="navbar-nav text-white" role=tablist>
+<li class=nav-item>
+<a class="nav-link text-white" href=#header>Главное</a>
+</li>
+<li class=nav-item>
+<a class="nav-link text-white" href=#section-1>Обо мне</a>
+</li>
+<li class=nav-item>
+<a class="nav-link text-white" href=#section-2>Услуги</a>
+</li>
+<li class=nav-item>
+<a class="nav-link text-white" href=#section-3>Контакты</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<header id=header class="flex-column align-items-center justify-content-center">
+<div class=container>
+<div class="header-main flex-column text-center">
+<h1 class=header-main-title>Привет!</h1>
+<div class="header-main-subtitle text-white">Давай знакомиться</div>
+</div>
+</div>
+<a href=#section-1 class="down-arrow text-white text-center d-none d-md-block text-decoration-none"><i class="fas fa-chevron-down"></i></a>
+</header>
+<main id=section-1 class="align-items-center no-gutters">
+<div class=container>
+<div class="section-1-wrapper flex-column align-items-center justify-content-center">
+<h2 class="section-title mb-5">Обо мне</h2>
+<div class="row section-1-inner align-items-center">
+<div class="col-md-6 p-0 justify-content-center col-l">
+<img src=img/about-us.webp class=img-fluid alt="About me">
+</div>
+<div class="col-md-6 px-0 flex-column justify-content-center col-r">
+<div class="card mx-auto">
+<div class="card-body text-white">
+<h3 class=about-title><strong>Я Азизов Санжар</strong></h3>
+<h3 class="about-subtitle mb-3">Верстальщик</h3>
+<div class=divider></div>
+<p class="about-text text-justify mt-3">Смог успешно реализовать своё хобби школьного времени в прибыльную и эффективную профессию. Я разрабатываю сайты высшей пробы и однозначно выдающегося качества, благодаря которым, все клиенты остаются довольны! В процессе разработки, я всегда придерживаюсь своей совести, что немаловажно, и всегда выкладываюсь по полной и до конца дабы угодить потребностям клиента.</p>
+</div>
+</div>
+</div>
+</div>
+<a href=#section-2 class="down-arrow text-primary text-center d-none d-md-flex justify-content-center text-decoration-none mt-5"><i class="fas fa-chevron-down"></i></a>
+</div>
+</div>
+</main>
+<main id=section-2 class=align-items-center>
+<div class=container>
+<div class="section-2-wrapper align-items-center flex-column">
+<h2 class="section-title text-center text-white mb-5">Услуги</h2>
+<div class="row justify-content-around align-items-center">
+<div class="col-md-5 card-left">
+<div class="card mx-auto card-cascade wider">
+<div class="view view-cascade overlay">
+<img src=img/card-1.webp loading=lazy alt="Card image cap" class=card-img-top>
+<a href=#section-3>
+<div class="mask rgba-white-slight"></div>
+</a>
+</div>
+<div class="card-body card-body-cascade">
+<h4 class="card-title blue-text pb-2">Лэндинг</h4>
+<p class=card-text>Веб-страница, основной задачей которой является сбор контактных данных целевой аудитории. Используется для усиления эффективности рекламы, увеличения аудитории. Целевая страница обычно содержит информацию о товаре или услуге.</p>
+</div>
+<div class="card-footer text-white bg-success text-center">
+<h5 data-toggle=tooltip data-placement=bottom title="Взависимости от курса ЦБ РУз">100$</h5>
+</div>
+</div>
+</div>
+<div class="col-md-5 card-right mt-4 m-md-0">
+<div class="card mx-auto card-cascade">
+<div class="view view-cascade overlay">
+<img src=img/card-2.webp loading=lazy alt="Card image cap" class=card-img-top>
+<a href=#section-3>
+<div class="mask rgba-white-slight"></div>
+</a>
+</div>
+<div class="card-body card-body-cascade">
+<h4 class="card-title blue-text pb-2">Сайт-визитка</h4>
+<p class=card-text>Небольшой сайт, как правило, состоящий из одной (или нескольких) веб-страниц и содержащий основную информацию об организации, частном лице, компании, товарах или услугах, прейскуранты, контактные данные.</p>
+</div>
+<div class="card-footer bg-warning text-white text-center">
+<h5 data-toggle=tooltip data-placement=bottom title="Взависимости от курса ЦБ РУз">200$</h5>
+</div>
+</div>
+</div>
+</div>
+<a href=#section-3 class="down-arrow text-white text-center d-none d-md-flex justify-content-center text-decoration-none mt-5"><i class="fas fa-chevron-down"></i></a>
+</div>
+</div>
+</main>
+<main id=section-3>
+<div class=container>
+<div class="section-3-wrapper flex-column align-items-center text-center">
+<h2 class="section-title mb-5">Контакты</h2>
+<div class="middle row justify-content-center no-gutters">
+<div class="box col-md-3" title=Facebook>
+<a class=block href=https://facebook.com/sanjar.azizov.73 target=_blank>
+<i class="fab fa-facebook-f"></i>
+</a>
+</div>
+<div class="box col-md-3" title=Instagram>
+<a class=block href=https://www.instagram.com/snj__snj/ target=_blank>
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+<div class="box col-md-3" title=Telegram>
+<a class=block href=https://t.me/snj_az target=_blank>
+<i class="fab fa-telegram-plane"></i>
+</a>
+</div>
+<div class="box col-12 mt-5">
+<div id=accordion>
+<div class="card bg-primary no-gutters mx-auto">
+<div class=card-header role=tab id=headingOne>
+<h5 class=mb-0>
+<a data-toggle=collapse class=phone-href href=.collapseOne aria-expanded=true aria-controls=collapseOne>
+<i class="fas fa-phone text-white"></i>
+</a>
+</h5>
+</div>
+<div class="collapse collapseOne" role=tabpanel aria-labelledby=headingOne data-parent=#accordion>
+<div class=card-body>
+<strong class=text-white>+998-93-516-18-81
+</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="page-footer font-small blue">
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+<a href=https://sanjar00.github.io> Sanjar Azizov</a>
+</div>
+</footer>
+<script src=https://code.jquery.com/jquery-3.5.1.js integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=anonymous></script>
+<script>setTimeout(function(){$(".holder").fadeToggle()},3000);</script>
+<script>$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(a){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var b=$(this.hash);b=b.length?b:$("[name="+this.hash.slice(1)+"]");if(b.length){a.preventDefault();$("html, body").animate({scrollTop:b.offset().top},1000,function(){var c=$(b);c.focus();if(c.is(":focus")){return false}else{c.attr("tabindex","-1");c.focus()}})}}});</script>
+<script src=assets/mdb/js/bootstrap.min.js></script>
+<script src=assets/mdb/js/popper.js></script>
+<script src=assets/mdb/js/mdb.min.js></script>
 </body>
 </html>
