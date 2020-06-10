@@ -6,9 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<script>
-  fbq('track', 'Purchase');
-</script>
 <style>
 .block-1{
     color: #fff;
@@ -37,27 +34,7 @@ Amount: $amount
 ";
 $tbot = file_get_contents("https://api.telegram.org/bot".$token."/sendMessage?chat_id=".$chatid."&text=".urlencode($mess));
 	
-// отправка сообщения
-if(@mail($mess, $tbot)) {
-	
 
-   $variable = <<<XYZ
-<div class="section block-1" style="
-font-family: sans-serif;">
-    <div class="wrap" style="height: 500px">
-        <div class="top-title top-title-c" style="text-align: center;padding: 30px 0;">
-            <h2 style="color: white; font-size: 28px">Спасибо. Ваш заказ принят!</h2>
-            <div style="color: white; font-size: 23px">Наш оператор свяжется с вами в ближайшее время</div>
-        </div>
-    </div>
-XYZ;
-echo $variable;
-
-} else {
-	echo "<center>Простите, но заказ не был принят. Попробуйте еще раз!</center>";
-}
-
-?>
 
 </body>
 </html>
