@@ -20,7 +20,6 @@ font-size: 30px;
 </style>
 
 <?php 
-
 $username = strip_tags($_POST['name']);   // сохраняем в переменную данные полученные из поля c именем
 $usertel = strip_tags($_POST['phone']); // сохраняем в переменную данные полученные из поля c телефонным номером
 $amount = strip_tags($_POST['amount']);
@@ -33,8 +32,6 @@ Phone: $usertel
 Amount: $amount
 ";
 $tbot = file_get_contents("https://api.telegram.org/bot".$token."/sendMessage?chat_id=".$chatid."&text=".urlencode($mess));
-	
-
-
+?>
 </body>
 </html>
