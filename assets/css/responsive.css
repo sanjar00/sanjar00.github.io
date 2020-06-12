@@ -13,6 +13,10 @@
 
 /* 1. Large devices (less than 1200px) */
 @media (max-width: 1199.98px) {
+    .logo img {
+        width: 100px;
+    }
+
     .background-shap:after {
         top: 72%;
     }
@@ -94,6 +98,14 @@
 
 /* 2. Large tablets (less than  992px) */
 @media (max-width: 991.98px) {
+    .image-sell-offer h5 {
+        font-size: 6px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
     .subscribe-heading span {
         font-size: 22px;
     }
@@ -491,7 +503,7 @@
     }
 
     .image-sell-offer h5 {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .image-sell-offer {
@@ -722,7 +734,7 @@
     }
 
     .image-sell-offer h5 {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .bottle-price {
@@ -832,7 +844,7 @@
     }
 
     .image-sell-offer h5 {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .pb-130 {
