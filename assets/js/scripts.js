@@ -144,36 +144,6 @@ We may release future updates so it will overwrite this file. it's better and sa
     /*=============================================
         06: Ajax Contact Form
     ==============================================*/
-
-    $('#sendMail').on("click", function () {
-        var name = $("#name").val();
-        var number = $("#number").val();
-        var address = $("#address").val();
-        var option = $("#option").val();
-
-        $.ajax({
-            url: '../php/send.php',
-            type: 'POST',
-            cache: false,
-            data: {
-                'name': name,
-                'number': number,
-                'address': address,
-                'option': option
-            },
-            beforeSend: function () {
-                $('#sendMail').prop("disabled", true);
-            },
-            success: function () {
-                $("#text-presuccess").addClass("d-none");
-                $("#form-dis").addClass("d-none");
-                $("#text-success").removeClass("d-none");
-            }
-        })
-
-    });
-
-
     /*============================================
         07: Preloader
     ==============================================*/
