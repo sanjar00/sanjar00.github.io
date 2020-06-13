@@ -145,7 +145,6 @@ We may release future updates so it will overwrite this file. it's better and sa
         06: Ajax Contact Form
     ==============================================*/
 
-
     $('#sendMail').on("click", function () {
         var name = $("#name").val();
         var number = $("#number").val();
@@ -153,7 +152,7 @@ We may release future updates so it will overwrite this file. it's better and sa
         var option = $("#option").val();
 
         $.ajax({
-            url: 'assets/php/send.php',
+            url: '../php/send.php',
             type: 'POST',
             cache: false,
             data: {
@@ -161,10 +160,18 @@ We may release future updates so it will overwrite this file. it's better and sa
                 'number': number,
                 'address': address,
                 'option': option
+            },
+            beforeSend: function () {
+                $('#sendMail').prop("disabled", true);
+            },
+            success: function () {
+                $("#text-presuccess").addClass("d-none");
+                $("#form-dis").addClass("d-none");
+                $("#text-success").removeClass("d-none");
             }
         })
 
-    })
+    });
 
 
     /*============================================

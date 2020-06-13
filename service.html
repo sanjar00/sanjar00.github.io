@@ -179,18 +179,21 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-9">
                         <!-- banner text -->
-                        <div class="banner-text-wrap text-center">
+                        <div class="banner-text-wrap text-center" id="text-presuccess">
                             <span class="schoolbell" data-animate="fadeInUp" data-delay=".4">Бесплатная доставка</span>
                             <h1 class="text-white">Оформите Заказ Сейчас</h1>
+                        </div>
+                        <div class="banner-text-wrap d-none text-center" id="text-success">
+                            <h1 class="text-white">Благодарим Вас за заказ</h1>
                         </div>
                         <!-- End of banner text -->
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="form-dis">
                     <div class="col-12">
                         <!-- banner form area -->
                         <div class="banner-form-area">
-                            <form action="#">
+                            <form action="assets/js/scripts.js">
                                 <div class="inpout-feield-wrap">
                                     <input type="text" id="name" placeholder="Ваше имя" class="banner-form" required>
                                     <input type="number" id="number" placeholder="Ваш номер телефона"
