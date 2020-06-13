@@ -1342,10 +1342,6 @@ label input[type=radio] {
     display: none;
 }
 
-.logo .sticky-logo {
-    display: none;
-}
-
 .main-header.sticky .logo .default-logo {
     display: none;
 }
