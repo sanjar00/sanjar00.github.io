@@ -17,6 +17,17 @@
         width: 100px;
     }
 
+    .image-selli-offer {
+        top: 0px;
+        right: 0px;
+        z-index: 100;
+    }
+
+    .banner-area-inner .container {
+        max-width: 1170px !important;
+        width: 95% !important;
+    }
+
     .background-shap:after {
         top: 72%;
     }
@@ -35,8 +46,8 @@
         padding: 40px;
     }
 
-    input.banner-form {
-        width: 200px;
+    .banner-form {
+        width: 210px;
     }
 
     .banner-text-wrap h1 {
@@ -96,10 +107,57 @@
 
 }
 
+@media (max-width: 1150px) {
+    .inpout-feield-wrap button.btn {
+        top: 50%;
+        position: relative;
+        transform: translate(10px, 0%);
+        margin-top: 30px;
+        right: 15px;
+    }
+
+    .inpout-feield-wrap {
+        background: transparent;
+    }
+
+    .banner-form {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .banner-area-inner .container {
+        max-width: 1170px !important;
+        width: 100% !important;
+    }
+
+
+}
+
 /* 2. Large tablets (less than  992px) */
 @media (max-width: 991.98px) {
     .image-sell-offer h5 {
         font-size: 6px;
+    }
+
+    .image-selli-offer {
+        top: 0px;
+        right: 0px;
+        z-index: 100;
+    }
+
+    .banner-form {
+        width: 100%;
+        height: 50px;
+        border-width: 0;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    .span-main {
+        font-size: 24px !important;
+        padding: 20px 30px;
+        width: 450px !important;
     }
 
     .logo img {
@@ -135,17 +193,9 @@
         display: none;
     }
 
-    .banner-text-wrap span {
-        font-size: 20px;
-    }
-
     .banner-text-wrap h1 {
         line-height: 50px;
         font-size: 40px;
-    }
-
-    input.banner-form {
-        width: 150px;
     }
 
     .type2 .single-feature h3 {
@@ -680,36 +730,13 @@
         width: 16.6671%;
     }
 
-    input.banner-form {
-        width: 100%;
-        border-radius: 5px;
-    }
-
     .banner-wrap.home-banner2 {
         padding: 200px 0 130px;
-    }
-
-    input.banner-form {
-        height: 50px;
-        border-width: 0;
-        margin-bottom: 30px;
-        border-radius: 5px;
     }
 
     .type2.form-checkbox {
         margin-bottom: 30px;
         margin-top: 0;
-    }
-
-    .inpout-feield-wrap button.btn {
-        top: 50%;
-        position: relative;
-        transform: translate(10px, 0%);
-        right: 15px;
-    }
-
-    .inpout-feield-wrap {
-        background: transparent;
     }
 
     .deliver-btn {
@@ -876,6 +903,12 @@
         display: none;
     }
 
+    .span-main {
+        font-size: 22px !important;
+        padding: 16px 28px !important;
+        width: 85% !important;
+    }
+
     .testionial-carousel2 .owl-dots {
         display: none;
     }
@@ -961,8 +994,13 @@
     }
 
     .banner-area1 .banner-text-wrap span {
-        font-size: 25px;
         margin-bottom: 5px;
+    }
+
+    .span-main {
+        font-size: 20px !important;
+        padding: 14px 26px !important;
+        width: 85% !important;
     }
 
     .marker2 .our-location-details {
@@ -1070,5 +1108,14 @@
 
     .marker5 .our-location-details {
         left: -229px;
+    }
+
+    .image-selli-offer {
+        width: 80px;
+        height: 80px;
+    }
+
+    .image-selli-offer h5 {
+        font-size: 12px;
     }
 }

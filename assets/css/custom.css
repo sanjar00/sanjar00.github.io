@@ -2,9 +2,10 @@
     Custom Stylesheet (Any custom styling you want to apply should be defined here).
 ====================================================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Lobster&display=swap');
 
 .logo {
-    width: 130px;
+    width: 150px;
 }
 
 .main-header.sticky .logo {

@@ -180,8 +180,7 @@
                     <div class="col-12 col-md-9">
                         <!-- banner text -->
                         <div class="banner-text-wrap text-center">
-                            <div class="page-title-content text-center">
-                            </div>
+                            <span class="schoolbell" data-animate="fadeInUp" data-delay=".4">Бесплатная доставка</span>
                             <h1 class="text-white">Оформите Заказ Сейчас</h1>
                         </div>
                         <!-- End of banner text -->
@@ -193,11 +192,20 @@
                         <div class="banner-form-area">
                             <form action="#">
                                 <div class="inpout-feield-wrap">
-                                    <input type="text" placeholder="Ваше имя" class="banner-form" required>
-                                    <input type="number" placeholder="Ваш номер телефона" class="banner-form" required>
-                                    <input type="text" placeholder="Примерный Адрес" class="banner-form" required>
-                                    <input type="number" placeholder="Кол-во" class="banner-form" required>
-                                    <button class="btn">Заказать сейчас</button>
+                                    <input type="text" id="name" placeholder="Ваше имя" class="banner-form" required>
+                                    <input type="number" id="number" placeholder="Ваш номер телефона"
+                                        class="banner-form" required>
+                                    <input type="text" id="address" placeholder="Укажите район" class="banner-form"
+                                        required>
+                                    <input list="products" id="option" name="choice" class="banner-form" required
+                                        placeholder="Выберите товар">
+                                    <datalist id="products">
+                                        <option value="Вода 'Ferette'">
+                                        <option value="Кулер 'Magic'">
+                                        <option value="Кулер 'Magic'">
+                                        <option value="Кулер 'Magic'">
+                                    </datalist>
+                                    <button type="button" id="sendMail" class="btn">Заказать сейчас</button>
                                 </div>
                                 <div class="form-checkbox">
                                     <ul class="mb-0 list-unstyled">

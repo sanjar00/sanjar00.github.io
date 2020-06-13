@@ -146,16 +146,25 @@ We may release future updates so it will overwrite this file. it's better and sa
     ==============================================*/
 
 
-    $('.contact-form').on('submit', 'form', function (e) {
-        e.preventDefault();
+    $('#sendMail').on("click", function () {
+        var name = $("#name").val();
+        var number = $("#number").val();
+        var address = $("#address").val();
+        var option = $("#option").val();
 
-        var $el = $(this);
+        $.ajax({
+            url: 'assets/php/send.php',
+            type: 'POST',
+            cache: false,
+            data: {
+                'name': name,
+                'number': number,
+                'address': address,
+                'option': option
+            }
+        })
 
-        $.post($el.attr('action'), $el.serialize(), function (res) {
-            res = $.parseJSON(res);
-            $el.parent('.contact-page-form').find('.form-response').html('<span>' + res[1] + '</span>');
-        });
-    });
+    })
 
 
     /*============================================
