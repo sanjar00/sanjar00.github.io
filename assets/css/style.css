@@ -2873,9 +2873,9 @@ input.banner-form:nth-child(4) {
     width: 100px;
     height: 100px;
     position: absolute;
-    background: rgba(255, 0, 0, 0.877);
+    background: rgb(0, 83, 161);
     border-radius: 50%;
-    border: 3px solid rgb(11, 48, 150);
+    border: 3px solid white;
     text-align: center;
     top: 0;
     right: 60px;
