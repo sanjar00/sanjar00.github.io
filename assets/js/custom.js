@@ -2,9 +2,6 @@
     Custom JS (Any custom js code you want to apply should be defined here).
 ====================================================================================*/
 
-var d = new Date();
-document.getElementById("year").innerHTML = d.getFullYear();
-
 $('#sendMail').on("click", function () {
     var name = $("#name").val();
     var number = $("#number").val();
@@ -50,3 +47,7 @@ $('#sendMail').on("click", function () {
     });
 
 });
+
+var d = new Date();
+document.getElementById("year").innerHTML = d.getFullYear();
+
