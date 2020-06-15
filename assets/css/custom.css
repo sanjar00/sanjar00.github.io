@@ -1,0 +1,25 @@
+/*==================================================================================
+    Custom Stylesheet (Any custom styling you want to apply should be defined here).
+====================================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Lobster&display=swap');
+
+.logo {
+    width: 150px;
+}
+
+.main-header.sticky .logo {
+    width: 100px;
+}
+
+.sticky-logo,
+.blue-logo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #081340;
+    font-size: 2.25rem;
+}
+
+.banner-wrap.success-list {
+    height: 100vh;
+}
